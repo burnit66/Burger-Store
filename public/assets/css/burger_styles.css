@@ -1,0 +1,88 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightyellow;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #E50000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1040px;
+    display: block;
+    margin: 0 auto;
+}
+
+.heading {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heading h1 {
+    margin-top: 0px;
+}
+
+.burger-img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.add-burger-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inner {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.burgers {
+    max-width: 300px;
+    padding: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align:top;
+}
+
+.burgers h2 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.burgers div div {
+    margin-top: 15px;
+}
+
+.devoured {
+    max-width: 300px;
+    padding: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align:top;
+}
+
+.devoured h2 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.devoured div div {
+    margin-top: 15px;
+}

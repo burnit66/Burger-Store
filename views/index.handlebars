@@ -1,38 +1,42 @@
-<img class="burger-img" src="assets/img/burger.png">
-
-<h1>Eat the Burger!</h1>
-
-<div id="burgers-container">
-  <h2>Burgers ready to eat:</h2>
-
-  <div>
-    {{#each burgers}}
-      {{#unless devoured}}
-        {{> burger/burger devoured=false}}
-      {{/unless}}
-    {{/each}}
-  </div>
+<div class="heading">
+    <img class="burger-img" src="assets/img/burger.png">
+    <h1>Eat the Burger!</h1>
 </div>
 
-<div id="burgers-devoured-container">
-  <h2>Burgers that have been devoured:</h2>
+<div class="container">
 
-  <div>
-    {{#each burgers}}
-      {{#if devoured}}
-        {{> burger/burger devoured=true}}
-      {{/if}}
-    {{/each}}
-  </div>
-</div>
-
-<div id="burgers-add-container">
-  <h2>Add a Burger</h2>
-  <form class="add-burger">
-    <div class="form-group">
-      <label for="burger-name">Burger Name:</label>
-      <input type="text" id="burger-name" name="burger-name">
+    <div class="add-burger-container">
+        <h2>Add a Burger:</h2>
+        <form class="add-burger">
+            <div class="form-group">
+                <label for="burger-name">Burger Name:</label>
+                <input type="text" id="burger-name" name="burger-name">
+                <button type="submit">Add Burger</button>
+            </div>
+        </form>
     </div>
-    <button type="submit">Add Burger</button>
-  </form>
+
+    <div class="inner">
+        <div class="burgers">
+            <h2>Burgers ready to eat:</h2>
+            <div>
+                {{#each burgers}}
+                {{#unless devoured}}
+                    {{> burger/burger devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="devoured">
+            <h2>Burgers that have been devoured:</h2>
+            <div>
+                {{#each burgers}}
+                {{#if devoured}}
+                    {{> burger/burger devoured=true}}
+                {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
 </div>
